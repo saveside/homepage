@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emin | Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body class="text-white h-screen flex items-center justify-center">
+    <a href="/" class="absolute top-4 left-4 flex items-center">
+        <span class="text-lg font-bold">Home</span>
+    </a>
+
+    <div class="container mx-auto p-4 md:p-8 flex flex-col items-center justify-center">
+        <div class="common-container w-full md:w-3/4 lg:w-2/3">
+            <div class="border-highlight p-8 mb-6 relative flex items-start">
+                <div class="mx-4">
+                    <span class="section-label">Header</span>
+                    <h1 class="text-2xl md:text-4xl font-bold text-left">Projects</h1>
+                    <p class="text-white mt-2 text-sm md:text-base text-left">
+                        Here's a list of some of the cool projects I have worked on. From kernel development to random
+                        hacks and tools, dive into the details of what I've been up to.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Projects Section -->
+            <div
+                class="border-highlight p-8 mb-6 relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-base md:text-lg">
+                <span class="section-label">Projects</span>
+
+                <a href="https://github.com/xeome/riscv-kernel"
+                    class="block border-highlight hover-bg p-4 text-center transition duration-300">
+                    <h2 class="font-bold">RISC-V Kernel</h2>
+                    <p class="text-sm">A RISC-V kernel written in C and assembly. This bare-metal kernel is implemented
+                        from scratch for the RISC-V ISA.</p>
+                </a>
+
+                <a href="https://github.com/xeome/buse-nfs"
+                    class="block border-highlight hover-bg p-4 text-center transition duration-300">
+                    <h2 class="font-bold">Buse-NFS</h2>
+                    <p class="text-sm">A project using NBD to create a custom block device that syncs data with a remote
+                        buffer over the network.</p>
+                </a>
+
+                <a href="https://github.com/xeome/XSKNet"
+                    class="block border-highlight hover-bg p-4 text-center transition duration-300">
+                    <h2 class="font-bold">XSKNet</h2>
+                    <p class="text-sm">A high-performance networking stack using XDP and XSK to bypass the Linux kernel
+                        network stack.</p>
+                </a>
+
+                <a href="https://github.com/xeome/jcc"
+                    class="block border-highlight hover-bg p-4 text-center transition duration-300">
+                    <h2 class="font-bold">JCC (C Compiler)</h2>
+                    <p class="text-sm">A self-hosting C compiler written from scratch.</p>
+                </a>
+
+                <a href="https://github.com/xeome/zmem"
+                    class="block border-highlight hover-bg p-4 text-center transition duration-300">
+                    <h2 class="font-bold">Zmem</h2>
+                    <p class="text-sm">A Linux memory monitoring program that displays detailed virtual memory
+                        information.</p>
+                </a>
+
+                <a href="https://github.com/xeome/xm32-vm"
+                    class="block border-highlight hover-bg p-4 text-center transition duration-300">
+                    <h2 class="font-bold">XM32</h2>
+                    <p class="text-sm">A custom 32-bit fantasy CPU architecture and virtual machine written in Rust.</p>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="mt-2 pt-4 relative">
+            <p class="text-sm md:text-base text-center text-gray-200">Made by Emin</p>
+        </div>
+    </div>
+</body>
+
+</html>
